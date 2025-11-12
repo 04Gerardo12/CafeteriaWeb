@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opciones - Cafetería ITH</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">LOGOTIPO</div>
+    <h1>CAFETERÍA ESCOLAR ITH</h1>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <nav class="nav-buttons">
+    <a href="registro.html">🏠 Inicio</a>
+    <a href="perfil.html">👤 Mi Perfil</a>
+    <a href="opciones.html" style="background-color: #123d8d;">⚙️ Opciones</a>
+    <a href="accesibilidad.html">♿ Accesibilidad</a>
+    <a href="perfil.html">👤 Mi Perfil</a>
+
+  </nav>
+
+  <main class="container">
+    <h2 style="text-align: center; color: #0b265c; font-size: 2rem; margin-bottom: 10px;">⚙️ Configuración y Opciones</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">Personaliza tu experiencia en la cafetería</p>
+
+    <div style="max-width: 800px; margin: 0 auto;">
+      
+      <!-- CUENTA -->
+      <section style="background-color: white; padding: 30px; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="color: #0b265c; font-size: 1.4rem; margin-bottom: 20px; border-bottom: 2px solid #0b265c; padding-bottom: 10px;">
+          👤 Mi Cuenta
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <a href="perfil.html" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333; transition: background-color 0.3s;">
+            <span>✏️ Editar Perfil</span>
+            <span>→</span>
+          </a>
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>🔒 Cambiar Contraseña</span>
+            <span>→</span>
+          </a>
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>💳 Métodos de Pago</span>
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- NOTIFICACIONES -->
+      <section style="background-color: white; padding: 30px; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="color: #0b265c; font-size: 1.4rem; margin-bottom: 20px; border-bottom: 2px solid #0b265c; padding-bottom: 10px;">
+          🔔 Notificaciones
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; cursor: pointer;">
+            <div>
+              <strong>Pedidos</strong>
+              <p style="font-size: 0.9rem; color: #666; margin-top: 5px;">Recibe actualizaciones de tus pedidos</p>
+            </div>
+            <input type="checkbox" checked style="width: 20px; height: 20px;">
+          </label>
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; cursor: pointer;">
+            <div>
+              <strong>Promociones</strong>
+              <p style="font-size: 0.9rem; color: #666; margin-top: 5px;">Ofertas especiales y descuentos</p>
+            </div>
+            <input type="checkbox" checked style="width: 20px; height: 20px;">
+          </label>
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; cursor: pointer;">
+            <div>
+              <strong>Menú Semanal</strong>
+              <p style="font-size: 0.9rem; color: #666; margin-top: 5px;">Recibe el menú cada lunes</p>
+            </div>
+            <input type="checkbox" style="width: 20px; height: 20px;">
+          </label>
+          <label style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; cursor: pointer;">
+            <div>
+              <strong>Recordatorios</strong>
+              <p style="font-size: 0.9rem; color: #666; margin-top: 5px;">Alertas de productos favoritos</p>
+            </div>
+            <input type="checkbox" style="width: 20px; height: 20px;">
+          </label>
+        </div>
+      </section>
+
+      <!-- PREFERENCIAS -->
+      <section style="background-color: white; padding: 30px; border-radius: 8px; margin-bottom: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div>
+            <label style="display: block; font-weight: 500; margin-bottom: 10px;">Idioma</label>
+            <select style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+              <option>Español</option>
+              <option>English</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-weight: 500; margin-bottom: 10px;">Vista predeterminada</label>
+            <select style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+              <option>Vista en cuadrícula</option>
+              <option>Vista en lista</option>
+            </select>
+          </div>
+          <div>
+            <label style="display: block; font-weight: 500; margin-bottom: 10px;">Ordenar productos por</label>
+            <select style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+              <option>Más populares</option>
+              <option>Precio: menor a mayor</option>
+              <option>Precio: mayor a menor</option>
+              <option>Alfabético</option>
+            </select>
+          </div>
+          <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <input type="checkbox" checked>
+            <span>Mostrar información nutricional</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+            <input type="checkbox">
+            <span>Ocultar productos agotados</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- PRIVACIDAD -->
+      <section style="background-color: white; padding: 30px; border-radius: 8px; margin-bottom: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>📜 Términos y Condiciones</span>
+            <span>→</span>
+          </a>
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>🛡️ Política de Privacidad</span>
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- AYUDA -->
+      <section style="background-color: white; padding: 30px; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="color: #0b265c; font-size: 1.4rem; margin-bottom: 20px; border-bottom: 2px solid #0b265c; padding-bottom: 10px;">
+          ❓ Ayuda y Soporte
+        </h3>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>💬 Chat de Soporte</span>
+            <span>→</span>
+          </a>
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>📧 Contactar por Email</span>
+            <span>→</span>
+          </a>
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>⭐ Calificar la App</span>
+            <span>→</span>
+          </a>
+          <a href="#" style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background-color: #f8f8f8; border-radius: 5px; text-decoration: none; color: #333;">
+            <span>🐛 Reportar un Problema</span>
+            <span>→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ACERCA DE -->
+      <section style="background-color: white; padding: 30px; border-radius: 8px; margin-bottom: 20px;">
+        <h3 style="color: #0b265c; font-size: 1.4rem; margin-bottom: 20px; border-bottom: 2px solid #0b265c; padding-bottom: 10px;">
+          ℹ️ Acerca de
+        </h3>
+        <div style="text-align: center; padding: 20px;">
+          <div style="font-size: 4rem; margin-bottom: 15px;">🏫</div>
+          <h4 style="color: #0b265c; margin-bottom: 10px;">Cafetería ITH</h4>
+          <p style="color: #666; margin-bottom: 5px;">Versión 1.0.0</p>
+          <p style="color: #666; font-size: 0.9rem;">© 2025 Instituto Tecnológico de Huatusco</p>
+        </div>
+      </section>
+
+      <!-- CERRAR SESIÓN -->
+      <section style="text-align: center; margin: 30px 0;">
+        <button style="background-color: #dc3545; padding: 15px 40px; font-size: 1.1rem;">
+          🚪 Cerrar Sesión
+        </button>
+        <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+          <a href="#" style="color: #dc3545;">Eliminar mi cuenta</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-top">
+      <h3>Seguir a ITH</h3>
+      <div class="icons">🔗 📘 📷 🐦</div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <p><a href="#">Contacto</a></p>
+        <p><a href="#">Privacidad</a></p>
+        <p><a href="accesibilidad.html">Accesibilidad</a></p>
+      </div>
+      <div>
+        <p><a href="opciones.html">Opciones</a></p>
+        <p><a href="productos.html">Menú</a></p>
+        <p><a href="#">Promociones</a></p>
+      </div>
+      <div>
+        <p><a href="historial-pedidos.html">Mis Pedidos</a></p>
+        <p><a href="#">Favoritos</a></p>
+        <p><a href="#">Ayuda</a></p>
+      </div>
+      <div>
+        <p><a href="#">Acerca de ITH</a></p>
+        <p><a href="#">Ubicación</a></p>
+        <p><a href="#">Horarios</a></p>
+      </div>
+    </div>
+    <p class="copy">ITH 2025 - Cafetería Escolar</p>
+  </footer>
+</body>
+</html>

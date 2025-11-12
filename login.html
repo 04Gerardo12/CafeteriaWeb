@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Cuenta - Cafetería ITH</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">LOGOTIPO</div>
+    <h1>CAFETERÍA ESCOLAR ITH</h1>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <!-- Navegación principal -->
+  <nav class="nav-buttons">
+    <a href="inicio.html">🏠 Inicio</a>
+    <a href="menu.html">🍽️ Comidas</a>
+    <a href="productos.html">🥪 Productos</a>
+    <a href="bebidas.html">🥤 Bebidas</a>
+    <a href="carrito.html">🛒 Mi Carrito</a>
+    <a href="perfil.html">👤 Mi Perfil</a>
+
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="container">
+    <div class="form-container" style="max-width: 600px;">
+      <h2 style="text-align: center; margin-bottom: 10px; color: #0b265c;">Crear Nueva Cuenta</h2>
+      <p style="text-align: center; color: #666; margin-bottom: 30px;">Únete a nuestra cafetería virtual</p>
+      
+      <form action="index.html" method="post">
+        <!-- Información Personal -->
+        <h3 style="color: #0b265c; margin-bottom: 15px; border-bottom: 2px solid #0b265c; padding-bottom: 5px;">📋 Información Personal</h3>
+        
+        <div class="form-group">
+          <label for="nombre">Nombre Completo *</label>
+          <input type="text" id="nombre" placeholder="Juan Pérez García" required>
+        </div>
+
+        <div class="form-group">
+          <label for="matricula">Número de Matrícula *</label>
+          <input type="text" id="matricula" placeholder="20240001" required pattern="[0-9]{8}">
+          <small style="color: #666;">8 dígitos</small>
+        </div>
+
+        <div class="form-group">
+          <label for="carrera">Carrera</label>
+          <select id="carrera" required>
+            <option value="">Selecciona tu carrera</option>
+            <option value="sistemas">Ingeniería en Sistemas Computacionales</option>
+            <option value="industrial">Ingeniería Industrial</option>
+            <option value="gestion">Ingeniería en Gestión Empresarial</option>
+            <option value="mecatronica">Ingeniería Mecatrónica</option>
+            <option value="electronica">Ingeniería Electrónica</option>
+            <option value="otro">Otra</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="semestre">Semestre</label>
+          <select id="semestre">
+            <option value="">Selecciona</option>
+            <option value="1">1er Semestre</option>
+            <option value="2">2do Semestre</option>
+            <option value="3">3er Semestre</option>
+            <option value="4">4to Semestre</option>
+            <option value="5">5to Semestre</option>
+            <option value="6">6to Semestre</option>
+            <option value="7">7mo Semestre</option>
+            <option value="8">8vo Semestre</option>
+            <option value="9">9no Semestre o más</option>
+          </select>
+        </div>
+
+        <!-- Contacto -->
+        <h3 style="color: #0b265c; margin: 30px 0 15px; border-bottom: 2px solid #0b265c; padding-bottom: 5px;">📧 Información de Contacto</h3>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico *</label>
+          <input type="email" id="email" placeholder="ejemplo@ith.edu.mx" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" placeholder="784 123 4567">
+        </div>
+
+        <!-- Seguridad -->
+        <h3 style="color: #0b265c; margin: 30px 0 15px; border-bottom: 2px solid #0b265c; padding-bottom: 5px;">🔒 Seguridad</h3>
+
+        <div class="form-group">
+          <label for="usuario">Nombre de Usuario *</label>
+          <input type="text" id="usuario" placeholder="juan_perez" required minlength="4">
+          <small style="color: #666;">Mínimo 4 caracteres</small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña *</label>
+          <input type="password" id="password" placeholder="••••••••" required minlength="6">
+          <small style="color: #666;">Mínimo 6 caracteres</small>
+        </div>
+
+        <div class="form-group">
+          <label for="password2">Confirmar Contraseña *</label>
+          <input type="password" id="password2" placeholder="••••••••" required>
+        </div>
+
+        <!-- Preferencias -->
+        <h3 style="color: #0b265c; margin: 30px 0 15px; border-bottom: 2px solid #0b265c; padding-bottom: 5px;">⚙️ Preferencias</h3>
+
+        <div style="margin: 15px 0;">
+          <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+            <input type="checkbox" id="notificaciones">
+            <span>Recibir notificaciones de promociones</span>
+          </label>
+          <label style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+            <input type="checkbox" id="newsletter">
+            <span>Suscribirse al menú semanal por correo</span>
+          </label>
+        </div>
+
+        <!-- Términos -->
+        <div style="margin: 25px 0;">
+          <label style="display: flex; align-items: start; gap: 8px;">
+            <input type="checkbox" required style="margin-top: 4px;">
+            <span style="font-size: 0.9rem; color: #666;">
+              Acepto los <a href="terminos.html" style="color: #0b265c;">términos y condiciones</a> y la 
+              <a href="privacidad.html" style="color: #0b265c;">política de privacidad</a> de la cafetería ITH.
+            </span>
+          </label>
+        </div>
+
+        <!-- Botones -->
+        <button type="submit" style="width: 100%; background-color: #28a745; margin-bottom: 10px;">
+          ✨ Crear Mi Cuenta
+        </button>
+        
+        <a href="index.html" style="display: block; text-align: center; padding: 12px; background-color: #f0f0f0; color: #0b265c; text-decoration: none; border-radius: 5px;">
+          ← Volver al Inicio
+        </a>
+      </form>
+
+      <p style="text-align: center; margin-top: 20px; color: #666;">
+        ¿Ya tienes cuenta? <a href="index.html" style="color: #0b265c; font-weight: bold;">Inicia sesión aquí</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer-top">
+      <h3>Seguir a ITH</h3>
+      <div class="icons">🔗 📘 📷 🐦</div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <p><a href="#">Contacto</a></p>
+        <p><a href="privacidad.html">Privacidad</a></p>
+      </div>
+      <div>
+        <p><a href="opciones.html">Opciones</a></p>
+        <p><a href="accesibilidad.html">Accesibilidad</a></p>
+      </div>
+    </div>
+    <p class="copy">ITH 2025</p>
+  </footer>
+</body>
+</html>

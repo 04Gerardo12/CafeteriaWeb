@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad - Cafetería ITH</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">LOGOTIPO</div>
+    <h1>CAFETERÍA ESCOLAR ITH</h1>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <nav class="nav-buttons">
+    <a href="inicio.html">🏠 Inicio</a>
+    <a href="productos.html">🛒 Productos</a>
+    <a href="opciones.html">⚙️ Opciones</a>
+    <a href="accesibilidad.html" style="background-color: #123d8d;">♿ Accesibilidad</a>
+  </nav>
+
+  <main class="container">
+    <h2 style="text-align: center; color: #0b265c; font-size: 2rem; margin-bottom: 10px;">♿ Opciones de Accesibilidad</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 40px;">Ajusta la página a tus necesidades</p>
+
+    <div class="accessibility-options">
+      
+      <!-- TAMAÑO DE TEXTO -->
+      <div class="accessibility-option">
+        <h3>📏 Tamaño del Texto</h3>
+        <p>Ajusta el tamaño de la letra para mayor comodidad</p>
+        <div class="accessibility-buttons">
+          <button>A-</button>
+          <button class="btn-active">A</button>
+          <button>A+</button>
+        </div>
+      </div>
+
+      <!-- CONTRASTE -->
+      <div class="accessibility-option">
+        <h3>🎨 Modo de Contraste</h3>
+        <p>Aumenta el contraste para mejor visibilidad</p>
+        <div class="accessibility-buttons">
+          <button>Normal</button>
+          <button>Alto Contraste</button>
+          <button>Contraste Invertido</button>
+        </div>
+      </div>
+
+      <!-- MODO OSCURO -->
+      <div class="accessibility-option">
+        <h3>🌙 Modo Oscuro</h3>
+        <p>Reduce el brillo de la pantalla</p>
+        <label><input type="checkbox"> Activar modo oscuro</label>
+      </div>
+
+      <!-- ESPACIADO -->
+      <div class="accessibility-option">
+        <h3>📐 Espaciado entre Líneas</h3>
+        <p>Aumenta el espacio entre líneas de texto</p>
+        <select>
+          <option>Normal (1.5)</option>
+          <option>Aumentado (2.0)</option>
+          <option>Máximo (2.5)</option>
+        </select>
+      </div>
+
+      <!-- ANIMACIONES -->
+      <div class="accessibility-option">
+        <h3>🎬 Animaciones</h3>
+        <p>Controla las animaciones de la página</p>
+        <label><input type="checkbox" checked> Permitir animaciones</label>
+      </div>
+
+      <!-- FUENTE -->
+      <div class="accessibility-option">
+        <h3>🔤 Tipo de Fuente</h3>
+        <p>Cambia la fuente para mejor lectura</p>
+        <select>
+          <option>Segoe UI (predeterminada)</option>
+          <option>Arial</option>
+          <option>Open Dyslexic (para dislexia)</option>
+          <option>Comic Sans (más legible)</option>
+        </select>
+      </div>
+
+      <!-- DALTONISMO -->
+      <div class="accessibility-option">
+        <h3>👁️ Filtros para Daltonismo</h3>
+        <p>Ajusta los colores según tu tipo de daltonismo</p>
+        <select>
+          <option>Ninguno</option>
+          <option>Protanopía (rojo-verde)</option>
+          <option>Deuteranopía (rojo-verde)</option>
+          <option>Tritanopía (azul-amarillo)</option>
+          <option>Monocromático</option>
+        </select>
+      </div>
+
+      <!-- SIMPLIFICAR PÁGINA -->
+      <div class="accessibility-option">
+        <h3>🎯 Modo Simplificado</h3>
+        <p>Muestra solo el contenido esencial</p>
+        <label><input type="checkbox"> Activar modo simplificado</label>
+      </div>
+
+      <!-- BOTONES DE ACCIÓN -->
+      <div class="accessibility-option" style="text-align: center;">
+        <button class="btn-success">💾 Guardar Cambios</button>
+        <button class="btn-secondary">🔄 Restablecer Valores</button>
+      </div>
+
+      <!-- INFORMACIÓN ADICIONAL -->
+      <div class="accessibility-option" style="background-color: #e3f2fd;">
+        <h4 style="color: #0b265c;">📢 ¿Necesitas más ayuda?</h4>
+        <p>Si tienes dificultades para usar la página o necesitas asistencia, contáctanos:</p>
+        <p><a href="#">📧 accesibilidad@ith.edu.mx</a></p>
+        <p><a href="#">📞 784 123 4567 (ext. 100)</a></p>
+        <p><a href="#">💬 Chat de soporte en vivo</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-top">
+      <h3>Seguir a ITH</h3>
+      <div class="icons">🔗 📘 📷 🐦</div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <p><a href="#">Contacto</a></p>
+        <p><a href="#">Privacidad</a></p>
+        <p><a href="accesibilidad.html">Accesibilidad</a></p>
+      </div>
+      <div>
+        <p><a href="opciones.html">Opciones</a></p>
+        <p><a href="productos.html">Menú</a></p>
+        <p><a href="#">Promociones</a></p>
+      </div>
+      <div>
+        <p><a href="historial-pedidos.html">Mis Pedidos</a></p>
+        <p><a href="#">Favoritos</a></p>
+        <p><a href="#">Ayuda</a></p>
+      </div>
+      <div>
+        <p><a href="#">Acerca de ITH</a></p>
+        <p><a href="#">Ubicación</a></p>
+        <p><a href="#">Horarios</a></p>
+      </div>
+    </div>
+    <p class="copy">ITH 2025 - Cafetería Escolar</p>
+  </footer>
+</body>
+</html>

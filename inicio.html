@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio - Cafetería ITH</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="logo">LOGOTIPO</div>
+    <h1>CAFETERÍA ESCOLAR ITH</h1>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <!-- NAVEGACIÓN -->
+  <nav class="nav-buttons">
+    <a href="inicio.html">🏠 Inicio</a>
+    <a href="menu.html">🍽️ Comidas</a>
+    <a href="productos.html">🥪 Productos</a>
+    <a href="bebidas.html">🥤 Bebidas</a>
+    <a href="carrito.html">🛒 Mi Carrito</a>
+    <a href="perfil.html">👤 Mi Perfil</a>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="container">
+    <!-- Sección de Bienvenida -->
+    <section style="text-align: center; margin-bottom: 40px;">
+      <h2 style="color: #0b265c; font-size: 2rem; margin-bottom: 10px;">¡Bienvenido a la Cafetería ITH!</h2>
+      <p style="font-size: 1.1rem; color: #666;">Tu lugar favorito para disfrutar comida deliciosa en el campus</p>
+    </section>
+
+    <!-- Galería de Imágenes -->
+    <section class="gallery" style="max-width: 800px; margin: 0 auto 40px;">
+      <h2 style="font-size: 1.5rem; margin-bottom: 15px; color: #0b265c;">Nuestros Platillos</h2>
+      <div class="image-box" style="background-color: white; padding: 20px; border-radius: 8px;">
+        <div class="image-placeholder" style="height: 400px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 5px;"></div>
+        <div class="thumbnails" style="display: flex; justify-content: center; gap: 10px; margin-top: 15px;">
+          <div class="thumb" style="width: 60px; height: 60px; background-color: #ccc; border-radius: 5px; cursor: pointer;"></div>
+          <div class="thumb" style="width: 60px; height: 60px; background-color: #ccc; border-radius: 5px; cursor: pointer;"></div>
+          <div class="thumb active" style="width: 60px; height: 60px; background-color: #ccc; border-radius: 5px; border: 3px solid #0b265c; cursor: pointer;"></div>
+          <div class="thumb" style="width: 60px; height: 60px; background-color: #ccc; border-radius: 5px; cursor: pointer;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Accesos Rápidos -->
+    <section>
+      <h2 style="text-align: center; margin-bottom: 30px; color: #0b265c;">¿Qué te gustaría hacer hoy?</h2>
+      <div class="products-grid" style="max-width: 900px; margin: 0 auto;">
+        <div class="product-card">
+          <div class="product-image">🍽️</div>
+          <h3>Ver Comidas</h3>
+          <p style="color: #666;">Desayunos, comidas y cenas</p>
+          <a href="comidas.html" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #0b265c; color: white; text-decoration: none; border-radius: 5px;">Explorar</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">🥪</div>
+          <h3>Productos</h3>
+          <p style="color: #666;">Snacks y antojitos</p>
+          <a href="productos.html" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #0b265c; color: white; text-decoration: none; border-radius: 5px;">Explorar</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">🥤</div>
+          <h3>Bebidas</h3>
+          <p style="color: #666;">Refrescantes y calientes</p>
+          <a href="bebidas.html" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #0b265c; color: white; text-decoration: none; border-radius: 5px;">Explorar</a>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image">🛒</div>
+          <h3>Mi Carrito</h3>
+          <p style="color: #666;">Ver tu pedido actual</p>
+          <a href="carrito.html" style="display: inline-block; margin-top: 10px; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; border-radius: 5px;">Ver Carrito</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="footer-top">
+      <h3>Seguir a ITH</h3>
+      <div class="icons">🔗 📘 📷 🐦</div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <p><a href="#">Contacto</a></p>
+        <p><a href="#">Privacidad</a></p>
+        <p><a href="accesibilidad.html">Accesibilidad</a></p>
+      </div>
+      <div>
+        <p><a href="opciones.html">Opciones</a></p>
+        <p><a href="productos.html">Menú</a></p>
+        <p><a href="#">Promociones</a></p>
+      </div>
+      <div>
+        <p><a href="historial-pedidos.html">Mis Pedidos</a></p>
+        <p><a href="#">Favoritos</a></p>
+        <p><a href="#">Ayuda</a></p>
+      </div>
+      <div>
+        <p><a href="#">Acerca de ITH</a></p>
+        <p><a href="#">Ubicación</a></p>
+        <p><a href="#">Horarios</a></p>
+      </div>
+    </div>
+    <p class="copy">ITH 2025 - Cafetería Escolar</p>
+  </footer>
+</body>
+</html>
